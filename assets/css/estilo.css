@@ -2,16 +2,12 @@
     background-color: #FFFDF7;
     display: flex;
     flex-direction: column;
-    margin: 0px 64px 0px 64px;
-
-    padding: 10px 16px;
-    
+    margin: 5% 15% 5% 15%;
+    padding: 10px 16px;  
     --main-txt-font: 'Lato', sans-serif;
     --main-txt-color:#333;
-
-    --footer-text-font: 'Lato', sans-serif;
-    
-    --highlight-txt-color: #EA5452;
+    --footer-text-font: 'Lato', sans-serif;   
+    --highlight-txt-color: #CB1B1A;
     --hightlight-txt-weight:
 }
 
@@ -30,7 +26,8 @@
 
 .logo{
     display: block;
-    width: 40%;  
+    width: 40%; 
+    max-width: fit-content; 
     height: auto; 
     object-fit: cover; 
 }
@@ -48,23 +45,17 @@
 .profile{
     display: flex;   
     padding-bottom: 56px;
-    border: 1px solid red;
 }
 
 
 /*SLIDESHOW*/
 .slideshow-container {
     box-sizing: border-box;
-    max-width: 600px;
+    max-width: 500px;
     position: relative;
     margin: auto;
 }
-
-/* Hide the images by default 
-.mySlides {
-    display: none; 
-}*/
-  
+ 
 /* Caption text */
  .text {
     background-color: rgba(41, 32, 32, 0.8);
@@ -79,9 +70,6 @@
     text-align: center;
 }  
 
-  
-  
-/* Fading animation */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -118,19 +106,17 @@
     font-style: italic;  
 }
 
-
 .section_references_links{
     padding-top: 8px;
     line-height: 120%;
 }
 
-
 a:link{
-    color:#EA5452;;
+    color:--highlight-txt-color;
 }
 
 a:visited{
-    color:#464545;
+    color: purple;
 }
 
 a:hover{
@@ -172,12 +158,10 @@ a:active{
     font-family: 'Lato', sans-serif;;
     color: #333;
     justify-content: center;
-    font-size: small;
+    font-size: 14px;
     line-height: 16px;
-    font-weight: lighter;
-    padding: 0 24px;
+    padding: 0 5%;
 }
-
 
 .footer_icon:hover {
     opacity: .6;
@@ -188,3 +172,41 @@ a:active{
     background-color: #808080;
     border-radius: 5px;
 }
+
+/*mudei a margem pra %. testar sem essa media querie*/
+@media only screen and (max-width: 400px){
+    /*.body{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 32px 0px 32px;
+        padding: 10px 16px;
+        --main-txt-font: 'Lato', sans-serif;
+        --main-txt-color:#333;
+        --footer-text-font: 'Lato', sans-serif;
+        --highlight-txt-color: #CB1B1A;
+        --hightlight-txt-weight:
+    }*/
+    
+    .slideshow-container {
+        box-sizing: border-box;
+        max-width: 250px;
+        position: relative;
+        margin: auto;
+    }
+    
+    .blockquote{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: 'Agbalumo & family';
+        font-size: 15px;
+        color:#464545;
+        font-style: italic;  
+    }
+}
+
+/*@media only screen and (min-device-width: 480px) 
+and (max-device-width: 640px) 
+and (orientation: landscape) 
+{
+         
+}*/
