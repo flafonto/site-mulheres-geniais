@@ -175,17 +175,17 @@ a:active{
 
 /*mudei a margem pra %. testar sem essa media querie*/
 @media only screen and (max-width: 400px){
-    /*.body{
+    .body{
         display: flex;
         flex-direction: column;
-        margin: 0px 32px 0px 32px;
+        margin: 0%;
         padding: 10px 16px;
         --main-txt-font: 'Lato', sans-serif;
         --main-txt-color:#333;
         --footer-text-font: 'Lato', sans-serif;
         --highlight-txt-color: #CB1B1A;
         --hightlight-txt-weight:
-    }*/
+    }
     
     .slideshow-container {
         box-sizing: border-box;
